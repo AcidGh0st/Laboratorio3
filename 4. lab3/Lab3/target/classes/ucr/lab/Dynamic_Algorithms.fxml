@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="500.0" prefWidth="613.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.DynamicAlgorithmsController">
+   <children>
+      <Pane prefHeight="91.0" prefWidth="613.0">
+         <children>
+            <Label alignment="CENTER" prefHeight="91.0" prefWidth="613.0" style="-fx-background-color: DBFB87;" text="DYNAMIC ALGORITHMS" textAlignment="CENTER">
+               <font>
+                  <Font name="Georgia" size="49.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane layoutY="116.0" prefHeight="384.0" prefWidth="613.0">
+         <children>
+            <Button fx:id="btn_clear" layoutX="330.0" layoutY="294.0" mnemonicParsing="false" onAction="#clearButton" prefHeight="38.0" prefWidth="119.0" style="-fx-background-color: AAF6FC;" text="Clear">
+               <font>
+                  <Font name="Forte" size="20.0" />
+               </font>
+            </Button>
+            <Label alignment="CENTER" layoutX="18.0" layoutY="19.0" prefHeight="25.0" prefWidth="324.0" text="Enter the value: ">
+               <font>
+                  <Font name="Elephant" size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="text_EnterValue" layoutX="366.0" layoutY="12.0" prefHeight="38.0" prefWidth="149.0" />
+            <Label alignment="CENTER" layoutX="18.0" layoutY="85.0" prefHeight="25.0" prefWidth="324.0" text="Selected the algorithm:">
+               <font>
+                  <Font name="Elephant" size="18.0" />
+               </font>
+            </Label>
+            <ComboBox fx:id="comboBox_Selected" layoutX="365.0" layoutY="78.0" prefHeight="38.0" prefWidth="150.0" style="-fx-background-color: FCACAA;" />
+            <Label alignment="CENTER" layoutX="18.0" layoutY="165.0" prefHeight="25.0" prefWidth="324.0" text="Result: ">
+               <font>
+                  <Font name="Elephant" size="18.0" />
+               </font>
+            </Label>
+            <TextArea fx:id="textA_result" layoutX="365.0" layoutY="154.0" prefHeight="38.0" prefWidth="150.0" />
+            <Button fx:id="calculateButton" layoutX="137.0" layoutY="294.0" mnemonicParsing="false" onAction="#calculateButton" prefHeight="38.0" prefWidth="119.0" style="-fx-background-color: FBCC87;" text="Calculate">
+               <font>
+                  <Font name="Forte" size="20.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
